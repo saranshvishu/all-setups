@@ -14,8 +14,8 @@ mv kops-linux-amd64 /usr/local/bin/kops
 aws s3api create-bucket --bucket cloudanddevopsbysaransh0073456.k8s.local --region us-east-1 # provide a unique bucket name 
 aws s3api put-bucket-versioning --bucket cloudanddevopsbysaransh0073456.k8s.local --region us-east-1 --versioning-configuration Status=Enabled # provide a unique bucket name 
 export KOPS_STATE_STORE=s3://cloudanddevopsbysaransh0073456.k8s.local
-kops create cluster --name saranshs.k8s.local --zones us-east-1a --master-count=1 --master-size t2.medium --node-count=2 --node-size t2.micro
-kops update cluster --name saranshs.k8s.local --yes --admin
+kops create cluster --name saransh.k8s.local --zones us-east-1a --master-count=1 --master-size t2.medium --node-count=2 --node-size t2.micro
+kops update cluster --name saransh.k8s.local --yes --admin
 
 # Delete cluster
 # kops delete cluster --name saransh.k8s.local --yes 
