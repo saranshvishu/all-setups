@@ -18,4 +18,4 @@ kops create cluster --name saranshs.k8s.local --zones us-east-1a --master-count=
 kops update cluster --name saranshs.k8s.local --yes --admin
 
 # Delete cluster
-# kops delete --name saransh.k8s.local --yes 
+# kops delete cluster --name saransh.k8s.local --yes 
