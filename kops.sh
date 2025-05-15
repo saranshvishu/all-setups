@@ -16,3 +16,6 @@ aws s3api put-bucket-versioning --bucket cloudanddevopsbysaransh0073456.k8s.loca
 export KOPS_STATE_STORE=s3://cloudanddevopsbysaransh0073456.k8s.local
 kops create cluster --name saranshs.k8s.local --zones us-east-1a --master-count=1 --master-size t2.medium --node-count=2 --node-size t2.micro
 kops update cluster --name saranshs.k8s.local --yes --admin
+
+# Delete cluster
+# kops delete --name saransh.k8s.local --yes 
