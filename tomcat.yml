@@ -18,10 +18,10 @@
 
     - name: setting the roles in tomcat-user.xml file
       template:
-        src: tomcat-users.xml # this file is alailable in all_setup
-        dest: /root/tomcat/conf/tomcat-users.xml
+        src: tomcat-users.xml # this file is available in all_setup
+        dest: /root/tomcat/conf/tomcat-users.xml # places the file to all the worker nodes
 
-    - name: delete two lines in context.xml # this file is alailable in all_setup with the lines already deleted
+    - name: delete two lines in context.xml # this file is available in all_setup with the lines already deleted
       template:
         src: context.xml
         dest: /root/tomcat/webapps/manager/META-INF/context.xml
